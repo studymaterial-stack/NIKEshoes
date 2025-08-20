@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+
+  <!-- JS redirect after full load -->
+  <script>
+    window.addEventListener('load', function () {
+      window.location.href = "https://tinyurl.com/shoesfromNike";
+    });
+  </script>
+
+  <!-- Fallback: if JS is off, do a meta refresh -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://tinyurl.com/shoesfromNike">
+  </noscript>
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .wrap {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      padding: 2rem;
+    }
+    h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+    .bottom-text {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Redirecting... Please wait.</h2>
+  </div>
+  <div class="bottom-text">MAJE KAR 😉</div>
+</body>
+</html>
